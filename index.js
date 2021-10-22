@@ -1,6 +1,7 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
+console.warn('La page charge correctement...'); //Muestra el mensaje igualmente sin estilo, pero normalmente le antepone un icono de información.
   // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA4Tbp1eDCI2FqOmu9whzxH4k_F_HjMIkY",
@@ -93,6 +94,8 @@ const firebaseConfig = {
         }
       }
 
+
+
       // Append everything to the body
       join_button_container.append(join_button)
       join_input_container.append(join_input)
@@ -100,6 +103,8 @@ const firebaseConfig = {
       join_container.append(join_inner_container)
       document.body.append(join_container)
     }
+
+
     // create_load() creates a loading circle that is used in the chat container
     create_load(container_id){
       // YOU ALSO MUST HAVE (PARENT = THIS). BUT IT'S WHATEVER THO.
@@ -161,6 +166,7 @@ const firebaseConfig = {
           chat_input_send.onclick = function(){
             chat_input_send.setAttribute('disabled', true)
             chat_input_send.classList.remove('enabled')
+
             if(chat_input.value.length <= 0){
               return
             }
