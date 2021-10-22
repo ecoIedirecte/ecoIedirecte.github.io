@@ -4,15 +4,15 @@ window.onload = function() {
 console.warn('La page charge correctement...'); //Muestra el mensaje igualmente sin estilo, pero normalmente le antepone un icono de información.
   // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA4Tbp1eDCI2FqOmu9whzxH4k_F_HjMIkY",
-  authDomain: "discordooo.firebaseapp.com",
-  projectId: "discordooo",
-  storageBucket: "discordooo.appspot.com",
-  messagingSenderId: "408602611867",
-  appId: "1:408602611867:web:f8a40fde3d9e2c9c3d363e"
-};
+  apiKey: "AIzaSyBCxwxx94vFo6xE8PFw6-7Q4E-RMKysh-c",
+  authDomain: "ecoiedirecte2.firebaseapp.com",
+  databaseURL: "https://ecoiedirecte2-default-rtdb.firebaseio.com",
+  projectId: "ecoiedirecte2",
+  storageBucket: "ecoiedirecte2.appspot.com",
+  messagingSenderId: "962324758238",
+  appId: "1:962324758238:web:38f5f824e48a9c02dd8c4f"};
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig)
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
   // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
@@ -40,8 +40,8 @@ const firebaseConfig = {
 
       var title = document.createElement('img')
       title.setAttribute('id', 'title')
-      title.src = 'https://zupimages.net/up/21/38/qbpz.png'
-
+      title.src = 'https://www.zupimages.net/up/21/42/g6rd.png'
+/* https://zupimages.net/up/21/38/qbpz.png */
       title_inner_container.append(title)
       title_container.append(title_inner_container)
       document.body.append(title_container)
